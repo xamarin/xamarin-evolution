@@ -1,25 +1,24 @@
 # Xamarin Evolution Process
 
-Xamarin is growing and evolving, guided by a community-driven process referred to as the Xamarin evolution process. This document outlines the Xamarin evolution process and how a feature grows from a rough idea into something that can improve the Xamarin development experience for millions of programmers.
+Xamarin is growing and evolving, guided by a community-driven process of evolution. This document outlines this process and how a feature grows from a rough idea into something that can improve the Xamarin development experience for millions of programmers.
 
 ## Scope
 
-The Xamarin evolution process covers all changes to Xamarin, including new features and APIs (no matter how small), changes to existing features or APIs, removal of existing features, and so on. Smaller changes, such as bug fixes, optimizations, or diagnostic improvements can be contributed via the normal contribution process.
+This process covers all changes to Xamarin, including new features and APIs (no matter how small), and proposals to change or remove existing features or APIs. Smaller changes, such as bug fixes, optimizations, or diagnostic improvements can be contributed via normal contribution process (i.e., bug reports and pull requests).
 
 ## Goals
 
-The Xamarin evolution process aims to leverage the collective ideas, insights, and experience of the Xamarin community to improve the Xamarin development experience. Its two primary goals are:
+The objective of this evolutionary process is to leverage the collective ideas, insights, and experience of the Xamarin community to improve the experience of developing with the Xamarin SDKs. Its two primary goals are:
 
 * Engage the wider Xamarin community in the ongoing evolution of Xamarin, and
 * Maintain the vision and conceptual coherence of Xamarin.
 
-There is a natural tension between these two goals. Open evolution processes are, by nature, chaotic. Yet, maintaining a coherent vision for something as complicated as a programming language requires some level of coordination. The Xamarin evolution process aims to strike a balance that best serves the Xamarin community as a whole.
+There is a natural tension between these two goals, and the evolution process aims to strike a balance that best serves the Xamarin community as a whole.
 
 ## Participation
 
 Everyone is welcome to propose, discuss, and review ideas to improve
-the Xamarin language and standard library on the [xamarin-evolution
-mailing list][xamarin-evolution-mailing-list]. Before posting a review,
+the Xamarin SDKs on the [appropriate mailing list][xamarin-evolution-mailing-list]. Before posting a review,
 please see the section "What goes into a review?" below.
 
 The Xamarin core team is
@@ -44,9 +43,9 @@ Please state explicitly whether you believe that the proposal should be accepted
 
 ## How to propose a change
 
-* **Check prior proposals**: many ideas come up frequently, and may either be in active discussion on the mailing list.  Please check the mailing list archives and this list for context before proposing something new.
+* **Check prior proposals**: many ideas come up frequently, and may be in active discussion on the mailing list.  Please check the mailing list archives and this list for context before proposing something new.
 
-* **Socialize the idea**: propose a rough sketch of the idea on the [xamarin-evolution mailing list][xamarin-evolution-mailing-list], the problems it solves, what the solution looks like, etc., to gauge interest from the community.
+* **Socialize the idea**: propose a rough sketch of the idea on the [appropriate mailing list][xamarin-evolution-mailing-list], the problems it solves, what the solution looks like, etc., to gauge interest from the community.
 * **Develop the proposal**: expand the rough sketch into a complete proposal, using the [proposal template](0000-template.md), and continue to refine the proposal on the evolution mailing list. Prototyping an implementation and its uses along with the proposal is encouraged, because it helps ensure both technical feasibility of the proposal as well as validating that the proposal solves the problems it is meant to solve.
 * **Request a review**: initiate a pull request to the [xamarin-evolution repository][xamarin-evolution-repo] to indicate to the core team that you would like the proposal to be reviewed. When the proposal is sufficiently detailed and clear, and addresses feedback from earlier discussions of the idea, the pull request will be accepted. The proposal will be assigned a proposal number as well as a core team member to manage the review.
 * **Address feedback**: in general, and especially [during the review period](#review), be responsive to questions and feedback about the proposal.
@@ -65,7 +64,7 @@ review. Reviews usually last a single week, but can run longer for
 particularly large or complex proposals.
 
 When the scheduled review period arrives, the review manager will post
-the proposal to the [xamarin-evolution mailing
+the proposal to the [appropriate mailing
 list][xamarin-evolution-mailing-list] with the subject "[Review]"
 followed by the proposal title and update the list of active
 reviews. To avoid delays, it is important that the proposal authors be
@@ -87,7 +86,7 @@ A given proposal can be in one of several states:
   document and updated in the [review schedule](schedule.md). When the
   review period begins, the review manager will update the state to
   *under review*.
-* **Under review**: the proposal is undergoing public review on the [xamarin-evolution mailing list][xamarin-evolution-mailing-list]. 
+* **Under review**: the proposal is undergoing public review on a [xamarin mailing list][xamarin-evolution-mailing-list]. 
 * **Under revision**: the proposal is undergoing revision by the
   author(s) based on feedback from the review.
 * **Deferred**: consideration of the proposal has been deferred
@@ -106,7 +105,7 @@ A given proposal can be in one of several states:
 ## Review announcement
 
 When a proposal enters review, an email using the following template will be
-sent to the xamarin-evolution-announce and xamarin-evolution mailing lists:
+sent to the [appropriate mailing list][xamarin-evolution-mailing-list]:
 
 ---
 
