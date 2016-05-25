@@ -10,7 +10,7 @@ proposals in that process.
 
 ## Upcoming reviews
 
-* None
+* May 30...Jun 3 [SE-0002: Additional EventArgs On PoppedToRoot](proposals/0002-additional-event-args-on-popped-to-root.md)
 
 ## Proposals awaiting scheduling
 
