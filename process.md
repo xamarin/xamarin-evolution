@@ -4,7 +4,7 @@ Xamarin is growing and evolving, guided by a community-driven process of evoluti
 
 ## Scope
 
-This process covers all changes to Xamarin, including new features and APIs (no matter how small), and proposals to change or remove existing features or APIs. Smaller changes, such as bug fixes, optimizations, or diagnostic improvements can be contributed via normal contribution process (i.e., bug reports and pull requests).
+This process covers all changes to Xamarin, including new features and APIs, and proposals to change or remove existing features or APIs. Smaller changes, such as bug fixes, optimizations, or diagnostic improvements can be contributed via normal contribution process (i.e., bug reports and pull requests).
 
 ## Goals
 
