@@ -9,13 +9,15 @@
 
 Enable providing own subclass of native control in platform renderers. Platform renderers create instances of native controls and it is hard to simply use user-provided subclass of such control.
 
-Xamarin-evolution thread: [link to the discussion thread for that proposal](http://lists.ximian.com/pipermail/forms-devel/2016-July/000078.html)
+Xamarin-evolution thread: [link to the discussion thread for that proposal](http://lists.ximian.com/pipermail/forms-devel/2016-July/000078.html).
 
 ## Motivation
 
-Platform renderers based on `ViewRenderer<TView, TNativeView>` create instances of `TNativeView` if user doesn't call `SetNativeControl` before `OnElementChanged`. However, the implementation in most renderers does a lot more than simply create the control - it also hooks up events and sometimes even creates other controls (see `ListViewRenderer`). Replacing default controls in custom renderers is not enough and may even break the functionality offered by the default renderer (`ListViewRenderer` doesn't even work if you supply subclass).
+Platform renderers based on `ViewRenderer<TView, TNativeView>` create instances of `TNativeView` in `OnElementChanged` by default unless  `SetNativeControl` is called before it. However, the implementation in most renderers does a lot more than simply create the control - it also hooks up events and sometimes even creates other controls (see `ListViewRenderer`). This presents problems for custom renderers where no logic is added to the renderer, but a subclass of the original native control is required.
 
-In certain cases a subclass of native control must be used for certain features. Main reason is overriding the default behavior of the platform control in renderer. Since simply calling `SetNativeControl` doesn't provide the same experience. Consider the following snippet taken from `ButtonRenderer` on Android:
+Using `SetNativeControl` to supply custom subclass of the appropriate native control doesn't offer the same functionality and may even break apps offered by the default renderer (`ListViewRenderer` doesn't even work if you supply subclass).
+
+In certain cases a subclass of native control must be used for certain features. Example is overriding the default behavior of the platform control in renderer which cannot be done via properties and events.  Consider the following snippet taken from `ButtonRenderer` on Android:
 
 ```csharp
 if (button == null)
